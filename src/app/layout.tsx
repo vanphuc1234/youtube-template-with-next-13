@@ -2,6 +2,13 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import AppFooter from '../components/footer';
+import AppHeader from '@/components/header';
+// import Font Awesome CSS
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+// Tell Font Awesome to skip adding the CSS automatically
+// since it's already imported above
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <AppHeader />
         {children}
         <AppFooter />
       </body>
