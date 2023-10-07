@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .footer {
   background-color: rgb(226, 225, 225);
-  height: 2.5em;
-  display: flex;
+  min-height: 2.5em;
+  display: block;
   text-align: center;
   justify-content: center;
 }
