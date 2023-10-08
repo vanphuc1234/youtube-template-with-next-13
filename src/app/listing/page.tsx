@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { Fragment } from 'react';
 
 const data: Array<number> = [1, 2, 3, 4, 5];
 
@@ -15,11 +16,14 @@ export default function ListingPage() {
       <p>Listing page</p>
       {data.map((value) => {
         return (
-          <>
-            <button key={value} onClick={() => handleOnClick(value)}>
+          <Fragment key={'item' + value}>
+            <button
+              className="w-10 h-10 bg-blue-400 mr-2 rounded-full text-white"
+              onClick={() => handleOnClick(value)}
+            >
               {value}
             </button>
-          </>
+          </Fragment>
         );
       })}
     </>
