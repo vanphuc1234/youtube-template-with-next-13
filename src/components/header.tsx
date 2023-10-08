@@ -13,7 +13,7 @@ import MyBtn from './my_btn';
 
 export default function AppHeader() {
   return (
-    <div className="flex justify-between w-full h-14 py-2 px-4 bg-white">
+    <div className="flex justify-between w-full h-10  bg-white">
       <BuildLogo />
       <BuildInput />
       <BuildAction />
@@ -44,11 +44,11 @@ function BuildInput() {
       <input
         type="text"
         placeholder="Tìm kiếm"
-        className="w-9/12 border-solid border rounded-l-full focus:outline-none focus:border-blue-600 px-4"
+        className="w-9/12 border-solid border rounded-l-full focus:outline-none focus:border-blue-600 px-4 2xl:w-10/12"
       />
       <button
         type="submit"
-        className="absolute top-0 right-0 w-3/12 h-full text-black bg-gray-500/20 rounded-r-full hover:bg-gray-500/40 focus:outline-none"
+        className="absolute top-0 right-0 w-3/12 h-full text-black bg-gray-500/20 rounded-r-full hover:bg-gray-500/40 focus:outline-none 2xl:w-2/12"
       >
         <FontAwesomeIcon
           // className="mr-1 text-red-600 text-xl inline-block"
